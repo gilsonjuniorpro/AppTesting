@@ -15,7 +15,7 @@ object Homework {
         }
         var a = 0L
         var b = 1L
-        var c = 0L
+        var c: Long
         for (i in 2..n) {
             c = a + b
             a = b
