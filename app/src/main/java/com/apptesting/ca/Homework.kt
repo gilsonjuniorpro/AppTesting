@@ -16,7 +16,12 @@ object Homework {
         var a = 0L
         var b = 1L
         var c: Long
-        for (i in 2..n) {
+        /*for (i in 2..n) {
+            c = a + b
+            a = b
+            b = c
+        }*/
+        (1..n-1).forEach { i ->
             c = a + b
             a = b
             b = c
