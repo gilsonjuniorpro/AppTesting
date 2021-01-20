@@ -2,6 +2,7 @@ package com.apptesting.ca
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
+import com.apptesting.ca.util.ResourceComparer
 import com.google.common.truth.Truth.assertThat
 import org.junit.After
 import org.junit.Before

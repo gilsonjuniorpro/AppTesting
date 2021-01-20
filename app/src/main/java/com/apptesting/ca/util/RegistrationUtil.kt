@@ -1,4 +1,4 @@
-package com.apptesting.ca
+package com.apptesting.ca.util
 
 object RegistrationUtil {
 

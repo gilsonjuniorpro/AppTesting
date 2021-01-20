@@ -1,5 +1,6 @@
 package com.apptesting.ca
 
+import com.apptesting.ca.util.RegistrationUtil
 import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
