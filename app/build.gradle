@@ -50,6 +50,12 @@ dependencies {
     androidTestImplementation 'androidx.test.core:1.1.0'
     androidTestImplementation 'androidx.test.ext:junit-ktx:1.1.2'*/
 
+    androidTestImplementation 'junit:junit:4.13.1'
+
+    def androidx_test_version = "1.1.0"
+    androidTestImplementation "androidx.test:core:$androidx_test_version"
+    androidTestImplementation "androidx.test:runner:$androidx_test_version"
+
     // Espresso
     def androidx_test_espresso = "3.1.0"
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidx_test_espresso"
@@ -69,4 +75,16 @@ dependencies {
     def truth = "1.0.1"
     testImplementation "com.google.truth:truth:$truth"
     androidTestImplementation "com.google.truth:truth:$truth"
+
+    // -------- LOCAL UNIT TESTS (use JUnit5)
+    // JUnit Jupiter
+    def junit_jupiter_version = "5.3.2"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junit_jupiter_version"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:$junit_jupiter_version"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junit_jupiter_version"
+
+
+    // -------- MOCKITO
+    def mockito_version = "2.19.0"
+    testImplementation "org.mockito:mockito-core:$mockito_version"
 }

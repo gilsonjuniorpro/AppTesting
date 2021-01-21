@@ -2,9 +2,9 @@ package com.apptesting.ca.ui
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
-import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import com.apptesting.ca.R
 import org.junit.Before
@@ -38,6 +38,11 @@ class MainActivityTest{
     @Test
     fun test_title_is() {
         onView(withId(R.id.activity_main_title)).check(matches(withText(R.string.text_mainactivity)))
+    }
+
+    @Test
+    fun navigate_to_second() {
+        onView(withId(R.id.button_next_activity)).perform(click())
     }
 
 
